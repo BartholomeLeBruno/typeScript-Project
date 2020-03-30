@@ -10,6 +10,10 @@ let quaranteNeufTrois = new Attack("quaranteNeufTrois", 300,100);
 let listAttack: Array<Attack> = [charge,quaranteNeufTrois];
 let listPokemon = begin(pokemon,pokemon2);
 battle.start();
+while (battle.status)
+{
+    battle.randomattack(listPokemon,listAttack);
+}
 setTimeout(function(){
     battle.randomattack(listPokemon, listAttack)
 }, 500);

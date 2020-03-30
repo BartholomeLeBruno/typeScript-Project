@@ -19,7 +19,8 @@ describe('Test ../Pokemon.ts', () => {
         expect(pokemon.name).toBe("Pikachu");
     });
     test('should first pokemon attaque first', () => {
-        expect(begin(pokemon,pokemon2)).toBe(pokemon);
+        let listPokemonOutput:Array<Pokemon> = [pokemon,pokemon2];
+        expect(begin(pokemon,pokemon2)).toStrictEqual(listPokemonOutput);
     });
     test('should first pokemon loose 10hp', () => {
         pokemon.attaque(battle,pokemon2,charge);
@@ -36,9 +37,10 @@ describe('Test ../Pokemon.ts', () => {
     });
     test('should game be over ', () => {
         battle.start();
-            setTimeout(function(){
-                battle.randomattack(listPokemon, listAttack)
-                }, 500);
+        while (battle.status)
+        {
+            battle.randomattack(listPokemon,listAttack);
+        }
             //var intervalID = window.setInterval(battle.randomattack, 500, pokemon, pokemon2, listAttack);
         expect(battle.status).toBe(false);
     });
