@@ -5,8 +5,13 @@ export class Pokemon{
         this.name = name;
         this.speed = speed;
     }
-    attaquefirst(pokemon: Pokemon) {
-        return this.speed > pokemon.speed;
-    }
 
+}
+export module pokemonFunction {
+    export function begin(pokemon:Pokemon, pokemon1: Pokemon) {
+        if(pokemon.speed > pokemon1.speed)
+            return pokemon;
+        else
+            return  pokemon1;
+    }
 }

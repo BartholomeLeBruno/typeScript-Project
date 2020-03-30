@@ -1,4 +1,5 @@
-import {Pokemon} from "../Pokemon"
+import {Pokemon, pokemonFunction} from "../Pokemon"
+import begin = pokemonFunction.begin;
 
 describe('Test ../Pokemon.ts', () => {
     test('should equals', () => {
@@ -8,7 +9,6 @@ describe('Test ../Pokemon.ts', () => {
     test('should first pokemon attaque first', () => {
         let pokemon = new Pokemon("Pikachu",45);
         let pokemon2 = new Pokemon("ratata",30);
-
-        expect(pokemon.attaquefirst(pokemon2)).toBe(true);
+        expect(begin(pokemon,pokemon2)).toBe(pokemon);
     });
 });
