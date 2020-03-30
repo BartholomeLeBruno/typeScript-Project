@@ -1,10 +1,16 @@
 import {Pokemon} from './Pokemon';
 import {Attack} from "./Attack";
+import {Battle} from "./Battle";
 
-let pokemon = new Pokemon("Pikachu",45,100, 15,10,10);
-let pokemon2 = new Pokemon("ratata",30,100, 15,10,10);
-let charge = new Attack("charge", 50,90);
-pokemon.attaque(pokemon2,charge);
-
-console.log(pokemon2.hp);
+let pokemon = new Pokemon("Pikachu",45,100, 15,10,10, 20);
+let pokemon2 = new Pokemon("ratata",30,100, 15,10,10,20);
+let battle = new Battle(pokemon, pokemon2);
+let charge = new Attack("charge", 50,100);
+let quaranteNeufTrois = new Attack("quaranteNeufTrois", 300,100);
+let listAttack: Array<Attack> = [charge,quaranteNeufTrois];
+battle.start();
+while (battle.status) {
+    battle.randomattack(pokemon, pokemon2, listAttack);
+    //var intervalID = window.setInterval(battle.randomattack, 500, pokemon, pokemon2, listAttack);
+}
 

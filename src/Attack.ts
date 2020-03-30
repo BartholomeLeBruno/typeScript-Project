@@ -1,5 +1,3 @@
-import {Pokemon} from "./Pokemon";
-
 export class Attack {
     basePower: any;
     name: any;
