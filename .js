@@ -14,10 +14,10 @@ module.exports = {
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/private/var/folders/f0/0pckx5_92y35wmgzjl657l5w0000gn/T/jest_dx",
 
-  // Automatically clear mock calls and instances between every _tests_
+  // Automatically clear mock calls and instances between every __tests__
   clearMocks: true,
 
-  // Indicates whether the coverage information should be collected while executing the _tests_
+  // Indicates whether the coverage information should be collected while executing the __tests__
   // collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
@@ -51,13 +51,13 @@ module.exports = {
   // Force coverage collection from ignored files using an array of glob patterns
   // forceCoverageMatch: [],
 
-  // A path to a module which exports an async function that is triggered once before all _tests_ suites
+  // A path to a module which exports an async function that is triggered once before all __tests__ suites
   // globalSetup: undefined,
 
-  // A path to a module which exports an async function that is triggered once after all _tests_ suites
+  // A path to a module which exports an async function that is triggered once after all __tests__ suites
   // globalTeardown: undefined,
 
-  // A set of global variables that need to be available in all _tests_ environments
+  // A set of global variables that need to be available in all __tests__ environments
   // globals: {},
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
@@ -84,7 +84,7 @@ module.exports = {
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
 
-  // Activates notifications for _tests_ results
+  // Activates notifications for __tests__ results
   // notify: false,
 
   // An enum that specifies notification mode. Requires { notify: true }
@@ -99,16 +99,16 @@ module.exports = {
   // Use this configuration option to add custom reporters to Jest
   // reporters: undefined,
 
-  // Automatically reset mock state between every _tests_
+  // Automatically reset mock state between every __tests__
   // resetMocks: false,
 
-  // Reset the module registry before running each individual _tests_
+  // Reset the module registry before running each individual __tests__
   // resetModules: false,
 
   // A path to a custom resolver
   // resolver: undefined,
 
-  // Automatically restore mock state between every _tests_
+  // Automatically restore mock state between every __tests__
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
@@ -119,45 +119,45 @@ module.exports = {
   //   "<rootDir>"
   // ],
 
-  // Allows you to use a custom runner instead of Jest's default _tests_ runner
+  // Allows you to use a custom runner instead of Jest's default __tests__ runner
   // runner: "jest-runner",
 
-  // The paths to modules that run some code to configure or set up the testing environment before each _tests_
+  // The paths to modules that run some code to configure or set up the testing environment before each __tests__
   // setupFiles: [],
 
-  // A list of paths to modules that run some code to configure or set up the testing framework before each _tests_
+  // A list of paths to modules that run some code to configure or set up the testing framework before each __tests__
   // setupFilesAfterEnv: [],
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
   // snapshotSerializers: [],
 
-  // The _tests_ environment that will be used for testing
+  // The __tests__ environment that will be used for testing
   testEnvironment: "node",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
 
-  // Adds a location field to _tests_ results
+  // Adds a location field to __tests__ results
   // testLocationInResults: false,
 
-  // The glob patterns Jest uses to detect _tests_ files
+  // The glob patterns Jest uses to detect __tests__ files
   // testMatch: [
   //   "**/__tests__/**/*.[jt]s?(x)",
-  //   "**/?(*.)+(spec|_tests_).[tj]s?(x)"
+  //   "**/?(*.)+(spec|__tests__).[tj]s?(x)"
   // ],
 
-  // An array of regexp pattern strings that are matched against all _tests_ paths, matched tests are skipped
+  // An array of regexp pattern strings that are matched against all __tests__ paths, matched tests are skipped
   // testPathIgnorePatterns: [
   //   "/node_modules/"
   // ],
 
-  // The regexp pattern or array of patterns that Jest uses to detect _tests_ files
+  // The regexp pattern or array of patterns that Jest uses to detect __tests__ files
   // testRegex: [],
 
   // This option allows the use of a custom results processor
   // testResultsProcessor: undefined,
 
-  // This option allows use of a custom _tests_ runner
+  // This option allows use of a custom __tests__ runner
   // testRunner: "jasmine2",
 
   // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
@@ -177,7 +177,7 @@ module.exports = {
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
 
-  // Indicates whether each individual _tests_ should be reported during the run
+  // Indicates whether each individual __tests__ should be reported during the run
   // verbose: undefined,
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
