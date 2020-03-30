@@ -1,6 +1,6 @@
 import {Pokemon} from './Pokemon';
 
-let pokemon = new Pokemon("pikachu");
+let pokemon1 = new Pokemon("pikachu");
 
-console.log(pokemon.name);
+console.log(pokemon1.name);
 
