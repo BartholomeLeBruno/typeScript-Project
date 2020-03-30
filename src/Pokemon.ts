@@ -1,6 +1,5 @@
 import {Attack} from "./Attack";
 import {Battle} from "./Battle";
-import {PokemonTools} from "./PokemonTools";
 
 
 export class Pokemon{
@@ -44,9 +43,11 @@ function getRandomInt(max:any)
     return Math.floor(Math.random() * Math.floor(max));
 
 }
-export function begin(pokemon:Pokemon, pokemon1: Pokemon) {
-    if(pokemon.speed > pokemon1.speed)
-        return pokemon;
-    else
-        return  pokemon1;
+export function begin(pokemon:Pokemon, pokemon1: Pokemon) : Array<Pokemon> {
+    if(pokemon.speed > pokemon1.speed) {
+        return [pokemon, pokemon1];
+    }
+    else {
+        return [pokemon1, pokemon];
+    }
 }
