@@ -14,9 +14,12 @@ while (battle.status)
 {
     battle.randomattack(listPokemon,listAttack);
 }
+/*
 setTimeout(function(){
     battle.randomattack(listPokemon, listAttack)
 }, 500);
+/*
+ */
     //var intervalID = window.setInterval(battle.randomattack, 500, pokemon, pokemon2, listAttack);
 
 
